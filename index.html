@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://unpkg.com/feather-icons"></script>
+ <title>Agência de Viagens</title>
+</head>
+
+<body>
+ <header>
+  <nav>
+   <!-- <img src="" alt="Logo da agencia"> -->
+   <p>Isadora Viagens</p>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#pacotes">Pacotes</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+   </ul>
+  </nav>
+
+  <div id="home" class="header-content">
+   <h1>Monte Fuji</h1>
+   <p>Conheça o Monte Fuji e todas as suas belezas! A data do embarque está próxima, junte-se a nós!</p>
+   <button>Saiba mais</button>
+  </div>
+ </header>
+
+ <section id="pacotes" class="pacotes">
+  <h1 class="pacotes-title">Conheça nossos pacotes</h1>
+
+  <div class="pacotes-cards">
+   <div class="card">
+    <div class="card-tag card-tag-top">
+     <p>Promoção</p>
+    </div>
+    <div class="card-tag card-tag-bottom">
+     <p>R$ 3000,00</p>
+    </div>
+
+    <img class="card-image" src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80" alt="Miami">
+    <div class="card-content">
+     <h1>Miami 5 noites com Hotel Premium</h1>
+     <ul>
+      <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+      <li><i data-feather="wifi"></i>Wifi</li>
+      <li><i data-feather="smile"></i>Pet friendly</li>
+     </ul>
+    </div>
+   </div>
+
+
+   <div class="card">
+    <div class="card-tag card-tag-bottom">
+     <p>R$ 3500,00</p>
+    </div>
+    <img class="card-image" src="https://images.unsplash.com/photo-1520106212299-d99c443e4568?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80" alt="Russia">
+    <div class="card-content">
+     <h1>Pacote 4 dias em Moscow</h1>
+     <ul>
+      <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+      <li><i data-feather="wifi"></i>Wifi</li>
+      <li><i data-feather="smile"></i>Pet friendly</li>
+     </ul>
+    </div>
+   </div>
+
+
+
+   <div class="card">
+    <div class="card-tag card-tag-top">
+     <p>Últimas Vagas</p>
+    </div>
+    <div class="card-tag card-tag-bottom">
+     <p>R$ 1000,00</p>
+    </div>
+    <img class="card-image" src="https://images.unsplash.com/photo-1567262795163-45432c3eccae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80" alt="Rio Grande do Sul">
+    <div class="card-content">
+     <h1>Cachoeira no RS</h1>
+     <ul>
+      <li><i data-feather="coffee"></i>Café da manhã incluso</li>
+      <li><i data-feather="wifi"></i>Wifi</li>
+      <li><i data-feather="smile"></i>Pet friendly</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="servicos" class="services">
+  <h1 class="services-title">Serviços</h1>
+  <div class="services-cards">
+   <div class="card">
+    <i data-feather="map"></i>
+    <div class="card-content">
+     <h3>Tours Guiados</h3>
+     <p>Tours guiados são passeios realizados com a ajuda de um guia, que além de nos dar informações irá nos consduzir ao longo do projeto.</p>
+    </div>
+    <button>Saiba mais</button>
+   </div>
+   <div class="card">
+    <i data-feather="camera"></i>
+    <div class="card-content">
+     <h3>Fotos Profissionais</h3>
+     <p>Nosso fotografos irão registrar os melhores momentos da viagem, para que você possa aproveitar as paisagens sem se preocupar.</p>
+    </div>
+    <button>Saiba mais</button>
+   </div>
+
+   <div class="card">
+    <i data-feather="navigation"></i>
+    <div class="card-content">
+     <h3>Aluguel de Veículos</h3>
+     <p>Para os viajantes que preferem a liberdade de explorar o ambiente sozinhos, oferecemos o serviço de aluguéis de carros.</p>
+    </div>
+    <button>Saiba mais</button>
+   </div>
+  </div>
+ </section>
+
+ <section id="contato" class="contato">
+  <div class="contato-card">
+   <h1>Entre em contato</h1>
+   <ul>
+    <li><i data-feather="map-pin"></i>Rua José Bonifácio, 155</li>
+    <li><i data-feather="mail"></i>contato@isadoravaigens.com.br</li>
+    <li><i data-feather="phone"></i>+55 (99) 9999-9999</li>
+   </ul>
+  </div>
+  <div id="map"></div>
+ </section>
+
+
+ <script>
+  feather.replace();
+
+
+
+  //   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  //    anchor.addEventListener('click', function(e) {
+  //     e.preventDefault();
+
+  //     document.querySelector(this.getAttribute('href')).scrollIntoView({
+  //      behavior: 'smooth'
+  //     });
+  //    });
+  //   });
+
+
+  function initMap() {
+   // The location of Uluru
+   const uluru = {
+    lat: -25.344,
+    lng: 131.036
+   };
+   // The map, centered at Uluru
+   const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+   });
+   // The marker, positioned at Uluru
+   const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+   });
+  }
+ </script>
+
+ <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly" async></script>
+</body>
+
+</html>
